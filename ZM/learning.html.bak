@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>學習</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>學習</h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">																
+									<span class="image main"><img src="images/pic04.jpg" width="100%" alt="" /></span>									
+									<h2>使用程式控制無人機</h2>
+									<p>無人機的程式撰寫可以在不同的作業系統上進行，像是Windows, Linux, Mac...當然，也可以透過不同的程式語言進行編程，像是Java, C++, Python, Scratch...而在我們的專題中，我們是使用Python程式語言進行編程，並且在Jupyter NoteBook的環境執行。在撰寫程式之前，我們先理解TCP與UDP協定與無人機連接的關係，接著進行套件的安裝與設定，然後學習使用程式控制無人機。
+									TCP與UDP是網路傳輸層的協議，他們相對的協議稱為SOCK_STREAM和SOCK_DGRAM兩種型別。SOCK_STREAM是基於TCP的，資料傳輸比較有保障。SOCK_DGRAM是基於UDP的，專門用於區域網路。對連線的SOCKET，SOCK_STREAM是有保障的(即能保證資料正確傳送到對方)，多用於資料(如檔案)傳送。SOCK_DGRAM是無保障的，主要用於在網路上發廣播資訊。</p>
+									<p>關於UDP:UDP協議是以port來分辨並執行在同一臺裝置上的多個應用程式，UDP存在有不提供資料包(封包交換網路中的最小傳輸資料單; datagram)分組、組裝和不能對資料包進行排序的缺點。也就是說，當訊息(message)傳送之後，是無法得知其是否已安全且完整的到達。
+									在網路質量令人不十分滿意的環境下，UDP協議資料包丟失會比較嚴重。
+									但是由於UDP的特性:它不屬於連線型協議，因而具有資源消耗小，處理速度快的優點，所以通常音訊、視訊和普通資料在傳送時使用UDP較多，因為它們即使偶爾丟失一兩個資料包，也不會對接收結果產生太大影響。</p>
+									<p>關於TCP:TCP提供端到端、全雙工通訊，採用位元組流方式，如果位元組流太長，將其分段，並提供緊急資料傳送功能。TCP特性: </p>
+									<ul style="list-style-type: decimal;">
+									<li>面向連線的傳輸;</li> 
+									<li>端到端的通訊;</li>
+									<li>高可靠性，確保傳輸資料的正確性，不出現丟失或亂序;</li> 
+									<li>全雙工方式傳輸;</li> 
+									<li>採用位元組流方式，即以位元組為單位傳輸位元組序列;</li> 
+									<li>緊急資料傳送功能。</li></ul>
+									所以如果你需要傳輸的資料是需要準確的，建議採用TCP，也就是SOCK_STREAM 如果你傳輸的是視訊音訊等資料，丟幾個包也無所謂的，可以採用UDP，也就是SOCK_DGRAM。
+									
+								<p>
+								<span class="image"><img src="images/UDP.jpg" width="100%" alt="" /></span>								
+								</p>
+								
+								
+								<hr/>
+								<h2>Tello EDU教育型無人機多邊飛行</h2>
+								<p>
+								老師指導我們以Python語言撰寫， 並且使用djitellopy的軟件包以及Python Threading，結合幾何座標的概念使無人機能夠達到多邊飛行的效果，例如：我們計算多邊形的內角和之後，我們嘗試讓無人機進行星型的飛行任務。
+								</p>								
+						
+								<p><center><span class="image"><img src="images/BM.jpg"  width="100%" alt="" /></span></center>	
+	
+								<hr/>
+								<h2>鍵盤操控無人機</h2>
+												
+								我們在有了多邊飛行的概念以及座標的幾何基礎後，我們開始練習使用鍵盤操控無人機，在盧老師的指導下，我們先學習無人機的圓周運動，了解基本的物理概念，然後再針對如何使用djitellopy軟件包操控rc a b c d動作進行研究，像是：
+								
+								<ul>
+								<li>a: left/right，對X軸左右旋轉動作，稱為翻滾(Roll)。速度範圍(-100, 100)</li>
+								<li>b: forward/backward，對Y軸上下抬頭低頭動作，稱為俯仰(Pitch)。速度範圍(-100, 100)</li>
+								<li>c: up/down, 控制馬達速度(油門)。速度範圍(-100, 100)</li>
+								<li>d: yaw 偏擺(Yaw)，對Z軸上下抬頭低頭動作，稱為偏擺(Yaw)或旋轉(rotate)。速度範圍(-100, 100)(-100, 100)</li>
+								</ul>
+			
+								<p><center><span class="image"><img src="images/KB.png" width="100%" alt="" /></span></center>	
+								
+								<hr/>
+								<h2>Tello EDU教育型無人機影像辨識</h2>
+								<p>
+								我們從基本的像素拆解的概念開始學習，到目標偵測與追蹤，透過使用DJI Tello對特定目標進行目標識別和跟踪需要方法來找出目標位置的變化以及對OpenCV代碼中BGR值的操作。對於物體識別，DJI Tello或PC攝像機需要識別目標的特定顏色。選擇的RGB值不太可能準確，但需要一個足夠接近的特定範圍才能讓攝像機識別到特定目標，RGB可以參考網址。為了跟踪物體，DJI Tello或PC攝像機需要處理目標與畫面中心的原始距離所存在的偏移(offset)，並做出相應的反應以重新對焦。在老師的指導下，我們嘗試著學習透過無人機去辨識綠色的球體。
+								</p>								
+								<p><center><span class="image"><img src="images/Green.jpg" width="100%" alt="" /></span></center>	
+
+						
+								<hr/>
+								<h2>Tello EDU教育型無人機人臉追蹤</h2>
+								當我們學習到物體的辨識之後，我們進一步去學習讓無人機能夠進行人臉的辨識與追蹤。而人臉的偵測方法可以分為四類。這些類別可能重疊，因此一個人臉的偵測演算法可能屬於兩個或多個類別。分類如下：					
+								<ul style="list-style-type: decimal;">
+									<li>基於知識(Knowledge-based)的方法：這些是基於規則的方法，對人臉的知識進行編碼。例如，一張臉必須在一定距離和位置內有鼻子、眼睛和嘴巴。這些方法的最大問題是難以建立一套適當的規則。如果規則過於籠統或過於詳細，可能會出現很多誤報。僅此方法是不夠的，無法在多張圖像中找到許多人臉。</li> 
+									<li>特徵不變(Feature-invariant)的方法：試圖找到面部不變特徵的演算法，不管它的角度或位置。</li>
+									<li>模板匹配(Template matching)的方法：這些演算法將存儲的人臉特徵模式(pattern)或模板(template)與輸入圖像中的目標進行比較。例如，人臉可以分為眼睛、面部輪廓、鼻子和嘴巴。此外，只需使用邊緣檢測方法，就可以通過邊緣建立人臉模型。</li> 
+									<li>基於外觀(Appearance-based)的方法：一種模板匹配(template matching)方法，其模式數據庫是從一組訓練圖像中學習來的。</li> 
+								</ul>					
+								
+								<center><span class="image"><img src="images/Face.jpg" width="100%" alt="" /></span></center>
+								
+								
+								
+								
+								
+								(資料來源：盧以詮博士- Tello_EDU_RMTT_Programming講義)</br>
+							</section>
+							
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<ul class="actions">
+								<li><a href="index.html" class="button">返回首頁</a></li>
+							</ul>
+						</section>
+						<section>
+
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

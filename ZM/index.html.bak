@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>第27屆專業實習成果發表</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>第27屆專業實習成果發表</h1>
+						<p>公司代號：ZM<br />
+						<p>實習單位：盧以詮 教授<br />
+						<p>輔導老師：盧以詮 教授<br />
+						<p>學生：蘇宣羽、林佳瑩<br />
+						<p>學號：1081609、1081612<br />
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">首頁</a></li>
+							<li><a href="#first">工作環境介紹</a></li>
+							<li><a href="#second">學習</a></li>
+							<li><a href="#third">心得感想</a></li>
+							<li><a href="#fourth">給系上的建議</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Tello EDU教育型無人機</h2>
+										</header>
+										<p>我們的專題內容主要是針對Tello EDU教育型無人機進行程式編寫，用程式來控制Tello EDU的運行，以及影像追蹤、拍照等。
+										原本我們寒假有機會可以到國小教小學生一些Tello EDU的相關課程，但是很可惜的，因為疫情的關係課程取消了。除此之外，我們也向教授學習數據分析的領域。</p>
+										<ul class="actions">
+											<li><a href="generic.html" class="button">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/Tello.png" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>1511B實驗室</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 fa-code"></span>
+										<h3>實驗室</h3>
+										<p>教授將實驗室提供給我們，希望可以給我們一個討論專題、讀書等等的空間。我們寒假時花了一點時間與精力打掃實驗室，便有了現在的樣貌。</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-copy"></span>
+										<h3>電腦桌</h3>
+										<p>基本上，平日課程與課程之間的空堂時間我們都會待在實驗室，有時假日也會留在實驗室讀書。實驗室有提供我們一人一台電腦。</p>
+									</li>
+									<li>
+										<span class="icon major style5 fa-gem"></span>
+										<h3>辦公區</h3>
+										<p>此外，我們規畫了一個小小的辦公區，放置掃描機、影印機等設備，以供日後我們在課業上有需要時可以使用。</p>
+									</li>
+								</ul>
+								<footer class="major">
+									
+								</footer>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>學習</h2>
+									<p>以下是我們三下到四上專題製作的進度安排<br />
+									</p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon solid fa-code-branch"></span>
+										<strong>3-4月</strong> Basic Movement
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open"></span>
+										<strong>5-6月</strong> Face Tracking
+									</li>
+									<li class="style3">
+										<span class="icon solid fa-signal"></span>
+										<strong>7-8月</strong> Image Capture
+									</li>
+									<li class="style4">
+										<span class="icon solid fa-laptop"></span>
+										<strong>9-10月</strong> Keyboard Control
+									</li>
+									<li class="style5">
+										<span class="icon fa-gem"></span>
+										<strong>11月</strong> Mapping
+									</li>
+								</ul>
+								<p>
+								我們的專業實習基本上從寒假開始的，當時因為疫情還不是很嚴重，所以基本上寒假期間的課程都是到學校進行。首先，我們有先上過了Level1的無人機課程，學習使用APP操控無人機，所以從寒假開始，我們的任務即是開始學習透過程式操控無人機。我們目前已經完成的有：無人機多邊飛行、鍵盤操控無人機、無人機影像辨識、無人機人臉追蹤這四個部分。
+								</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="learning.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+							<section id="third" class="main special">
+								<header class="major">
+									<h2>心得感想</h2>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="1081609_thoughts.html" class="button primary">1081609蘇宣羽</a></li>
+										<li><a href="1081612_thoughts.html" class="button primary">1081612林佳瑩</a></li>
+									</ul>
+								</footer>
+							</section>
+							
+							<section id="fourth" class="main special">
+								<header class="major">
+									<h2>給系上的建議</h2>
+									<p>建議系上可以將資訊統一放置至一個網站、portal或是teams，這樣才不會有遺漏訊息的問題，因為重複寄信容易遺漏訊息。如果有同一個平台發放資訊的話，比較不容易有訊息遺漏的問題。</p>
+								</header>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
